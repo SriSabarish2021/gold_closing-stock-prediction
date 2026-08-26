@@ -1,0 +1,17 @@
+{
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 100,
+  "min_samples_split": 100,
+  "random_state": 1,
+  "predictors": [
+    "Close",
+    "High",
+    "Low",
+    "Open",
+    "Volume"
+  ],
+  "target": "Next-Day Price Direction (1 = UP, 0 = DOWN)",
+  "backtest_precision": 0.5105,
+  "train_samples": 4110,
+  "trained_at": "2026-08-26T20:57:56.179980"
+}
