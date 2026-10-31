@@ -1,4 +1,15 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+/**
+ * Centralized API Service — all requests go through this module.
+ * Set VITE_API_URL in your .env (local) or Netlify environment variables (production).
+ */
+export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
+if (!import.meta.env.VITE_API_URL) {
+  console.warn(
+    '[StockPulse ML] VITE_API_URL is not set — falling back to http://localhost:8000.\n' +
+    'For production, set VITE_API_URL in your Netlify site environment variables.'
+  );
+}
 
 /**
  * Centralized API Service for interacting with FastAPI backend

@@ -1,0 +1,47 @@
+# === Python Backend ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+.env
+.venv/
+venv/
+ENV/
+env/
+*.env.local
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# === Frontend Node ===
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+
+# === OS & Editor ===
+.DS_Store
+Thumbs.db
+*.suo
+*.user
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# === Logs ===
+*.log
+logs/
+
+# NOTE: trained_model.joblib is intentionally committed (~1.4MB)
+# NOTE: infosys_data.csv and infosys_data_@.csv are committed as training data

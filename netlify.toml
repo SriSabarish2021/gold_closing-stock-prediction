@@ -1,0 +1,17 @@
+# Netlify Deployment Configuration
+# Repo root: stock-prediction/
+# Frontend lives in: frontend/
+
+[build]
+  base    = "frontend"
+  command = "npm install && npm run build"
+  publish = "frontend/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA routing — send all paths to index.html
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
